@@ -1,0 +1,12 @@
+switches = {'SWITCH1':{'SWITCH2':['Gi0/1','Gi0/2']},
+            'SWITCH2':{'SWITCH1':['Gi0/1','Gi0/2']}}
+
+for switch in switches:
+    print (switch)
+    for neighbor in switches[switch]:
+        print (neighbor)
+        for interface in switches[switch][neighbor]:
+            print (interface)
+              
+
+
